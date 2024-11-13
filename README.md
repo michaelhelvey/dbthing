@@ -34,6 +34,8 @@ Like I said, I don't really know what I'm doing, but I think my goals look somet
 
 (basically, ACID)
 
+- [ ] WAL for crash recovery
+- [ ] WAL for replication
 - [ ] MVCC (multi-version-concurrency-control). I have two processes and one wants to write to the
       table and the other one wants to read from the table. How do I ensure that the writer gets to
       write but the reader sees the _previous_ version until the write is committed? When do I
@@ -44,3 +46,4 @@ Like I said, I don't really know what I'm doing, but I think my goals look somet
 ## Reading
 
 - [The Design of the Postgres Storage System](https://dsf.berkeley.edu/papers/ERL-M87-06.pdf)
+- [How Postgre stores data on disk](https://drew.silcock.dev/blog/how-postgres-stores-data-on-disk/)
